@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+
+<head>
+
+    <title>FirstForm</title>
+</head>
+<body>
+
+    <header>
+        <h1>Welkome to my first form</h1>
+    </header>
+
+    <form action="https://formspree.io/f/myzggorp" method="post">
+
+        <p>
+            <label> First Name:
+                <input type="text" name="First Name" required>
+            </label>
+        </p>
+
+        <p>Last Name:
+            <label>
+                <input type="text" name="Last Name" required>
+            </label>
+        </p>
+        <label>Email:
+            <input type="email" name="email" multiple pattern="^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}\,?\s?)+$">
+        </label>
+
+        <p>
+        <label>Comments
+            <textarea name="comments" rows="5"></textarea>
+
+        </label>
+    </p>
+
+    <fieldset class="checkbox">
+        <legend>Is this code ok?</legend>
+
+        <label>
+            <span>yes</span>
+            <input type="checkbox" name="answer" value="yes">
+        </label>
+
+        <label>
+            <span>no</span>
+            <input type="checkbox" name="answer" value="no">
+        </label>
+
+        <label>
+            <span>maby</span>
+            <input type="checkbox" name="answer" value="maby">
+        </label>
+        
+    </fieldset>
+
+    <label>Choose a colour
+        <input name="colour" type="color" value="#ff0000">
+    </label>
+
+    <button type="send">Send</button>
+    
+    </form>
+</body>
+</html>

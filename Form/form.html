@@ -24,7 +24,6 @@
                 <input type="text" name="Last Name" required>
             </label>
         </p>
-
         <label>Email:
             <input type="email" name="email" multiple pattern="^([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}\,?\s?)+$">
         </label>
@@ -52,10 +51,16 @@
         <label>
             <span>maby</span>
             <input type="checkbox" name="answer" value="maby">
-            <button type="send">Send</button>
         </label>
         
     </fieldset>
+
+    <label>Choose a colour
+        <input name="colour" type="color" value="#ff0000">
+    </label>
+
+    <button type="send">Send</button>
+    
     </form>
 </body>
 </html>
